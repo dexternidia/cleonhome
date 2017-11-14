@@ -6,20 +6,20 @@
         <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
         <link rel="stylesheet" href="<?php echo baseUrl ?>assets/bower/animate.css/animate.min.css">
-                <link rel="stylesheet" href="<?php echo baseUrl ?>assets/bower/sweetalert2/dist/sweetalert2.min.css">
-<script
-  src="https://code.jquery.com/jquery-2.2.4.min.js"
-  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
-  crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="<?php echo baseUrl ?>assets/bower/sweetalert2/dist/sweetalert2.min.css">
+        <script
+        src="https://code.jquery.com/jquery-2.2.4.min.js"
+        integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+        crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
         <script src="<?php echo baseUrl ?>assets/bower/sweetalert2/dist/sweetalert2.min.js"></script>
         <style>
-  html { 
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-</style>
+        html {
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        }
+        </style>
         <style>
         /* Preloader */
         #preloader {
@@ -49,7 +49,7 @@
         <nav class="z-depth-2">
             <div class="nav-wrapper red darken-2 z-depth-2">
                 <img style="margin-top: -10px; box-shadow: 0px 0px 4px #444;" width="80px;" src="<?php echo baseUrl ?>assets/img/gobarinas.png" alt="">
-                <a href="#" class="brand-logo">---> Code work</a>         
+                <a href="#" class="brand-logo"></a>
                 <ul id="nav-mobile" class="right hide-on-med-and-down">
                     <li><a href="<?php echo baseUrl ?>home/principal"><i class="fa fa-home"></i> Inicio</a></li>
                     <li><a href="<?php echo baseUrl ?>home/principal/solicitud"><i class="fa fa-question-circle"></i> Quienes Somos</a></li>
@@ -64,32 +64,31 @@
         <!-- jQuery -->
         <?php echo $content ?>
         <!-- Preloader -->
-<div id="preloader">
-  <div id="status">
-    <div class="preloader-wrapper active">
-    <div class="spinner-layer spinner-red-only">
-      <div class="circle-clipper left">
-        <div class="circle"></div>
-      </div><div class="gap-patch">
-        <div class="circle"></div>
-      </div><div class="circle-clipper right">
-        <div class="circle"></div>
-      </div>
+        <div id="preloader">
+            <div id="status">
+                <div class="preloader-wrapper active">
+                    <div class="spinner-layer spinner-red-only">
+                        <div class="circle-clipper left">
+                            <div class="circle"></div>
+                        </div><div class="gap-patch">
+                        <div class="circle"></div>
+                    </div><div class="circle-clipper right">
+                    <div class="circle"></div>
+                </div>
+            </div>
+        </div>
     </div>
-  </div>
 </div>
-</div>
-        <!-- /container -->
-        <!-- MENSAJES FLASH SWEET ALERT 2 -->
-        <?php if (Message::hasMessages()): ?>
-        <?php echo Message::show() ?>
-        <?php endif ?>
-    </body>
+<!-- /container -->
+<!-- MENSAJES FLASH SWEET ALERT 2 -->
+<?php if (Message::hasMessages()): ?>
+<?php echo Message::show() ?>
+<?php endif ?>
+</body>
 </html>
 <!-- Navbar
 ================================================== -->
 <script>
-
 </script>
 <script>
 $(window).on('load', function() { // makes sure the whole site is loaded
@@ -100,11 +99,9 @@ $(document).ready(function(){
 $('.slider').slider();
 });
 $(document).ready(function() {
-    $('select').material_select();
+$('select').material_select();
 });
 $('.noticias').addClass('animated bounceIn');
-
-
 })
 </script>
 </body>

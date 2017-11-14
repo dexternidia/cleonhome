@@ -40,33 +40,14 @@ text-align: center;
 <div class="slider" style="margin-top: -6px;">
     <ul class="slides z-depth-3">
         <li>
-            <img src="http://res.cloudinary.com/tuconsultaenlinea/image/upload/v1507686916/j6pwqqova4eflktndmjy.jpg"> <!-- random image -->
-            <div class="caption left-align">
-                <h3 style="text-shadow: 0px 0px 1px #fff;" class="red-text">Ayuda social!</h3>
-                <h5 class="light grey-text text-lighten-3">lorem ipsum.</h5>
-            </div>
+            <img src="http://www.gobarinas.gob.ve/cadip/bannerparagobarinas/BANNER-_3-gobarinas-_c.gif"> 
         </li>
         <li>
-            <img src="http://res.cloudinary.com/tuconsultaenlinea/image/upload/v1507687152/bjxus3g7loqkncqfr8so.jpg"> <!-- random image -->
-            <div class="caption left-align">
-                <h3 style="text-shadow: 0px 0px 1px #fff;"  class="red-text">Ayuda social!</h3>
-                <h5 class="light grey-text text-lighten-3">lorem ipsum.</h5>
-            </div>
+            <img src="http://www.gobarinas.gob.ve/cadip/bannerparagobarinas/BANNER-_1-gobarinas-_a.gif"> 
         </li>
         <li>
-            <img src="http://res.cloudinary.com/tuconsultaenlinea/image/upload/v1507687259/ebre2dvlarvjmbkcx9uh.jpg"> <!-- random image -->
-            <div class="caption center-align">
-                <h3 style="text-shadow: 0px 0px 1px #fff;"  class="red-text">Ayuda social!</h3>
-                <h5 class="light grey-text text-lighten-3">lorem ipsum.</h5>
-            </div>
-        </li>
-        <li>
-            <img src="http://res.cloudinary.com/tuconsultaenlinea/image/upload/v1507687346/yxux8yu4m7r2cxuadhor.jpg"> <!-- random image -->
-            <div class="caption center-align">
-                <h3 style="text-shadow: 0px 0px 1px #fff;"  class="red-text">Ayuda social!</h3>
-                <h5 class="light grey-text text-lighten-3">lorem ipsum.</h5>
-            </div>
-        </li>
+            <img src="http://www.gobarinas.gob.ve/cadip/bannerparagobarinas/BANNER-_2-gobarinas-_b.gif"> <!-- random image -->
+        </li>   
     </ul>
 </div>
 <div class="row">
