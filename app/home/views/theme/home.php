@@ -3,6 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <title>Document</title>
+        <link href="https://fonts.googleapis.com/css?family=Lobster|Vollkorn+SC" rel="stylesheet"> 
         <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
         <link rel="stylesheet" href="<?php echo baseUrl ?>assets/bower/animate.css/animate.min.css">
@@ -13,6 +14,45 @@
         crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
         <script src="<?php echo baseUrl ?>assets/bower/sweetalert2/dist/sweetalert2.min.js"></script>
+ <link href="<?php echo baseUrl ?>assets/bower/lightbox2/dist/css/lightbox.min.css" rel="stylesheet">
+<script src="<?php echo baseUrl ?>assets/bower/lightbox2/dist/js/lightbox.min.js"></script>
+<style>
+.indicators
+{
+display: none;
+}
+.cards-container {
+column-break-inside: avoid;
+}
+.cards-container .card {
+display: inline-block;
+overflow: visible;
+}
+@media only screen and (max-width: 600px) {
+.cards-container {
+-webkit-column-count: 1;
+-moz-column-count: 1;
+column-count: 1;
+}
+}
+@media only screen and (min-width: 601px) {
+.cards-container {
+-webkit-column-count: 2;
+-moz-column-count: 2;
+column-count: 2;
+}
+}
+@media only screen and (min-width: 993px) {
+.cards-container {
+-webkit-column-count: 3;
+-moz-column-count: 3;
+column-count: 3;
+}
+}
+.text-center {
+text-align: center;
+}
+</style>
         <style>
         html {
         -moz-background-size: cover;
@@ -43,13 +83,20 @@
         margin: -100px 0 0 -100px;
         /* is width and height divided by two */
         }
+
+        .titulo
+        {
+            font-family: 'Vollkorn SC', serif;
+            font-family: 'Lobster', cursive;
+            font-size: 4em;
+        }
         </style>
     </head>
     <body>
         <nav class="z-depth-2">
             <div class="nav-wrapper red darken-2 z-depth-2">
                 <img style="margin-top: -10px; box-shadow: 0px 0px 4px #444;" width="80px;" src="<?php echo baseUrl ?>assets/img/gobarinas.png" alt="">
-                <a href="#" class="brand-logo"></a>
+                <a href="#" class="brand-logo titulo">DISBASA</a>
                 <ul id="nav-mobile" class="right hide-on-med-and-down">
                     <li><a href="<?php echo baseUrl ?>home/principal"><i class="fa fa-home"></i> Inicio</a></li>
                     <li><a href="<?php echo baseUrl ?>home/principal/solicitud"><i class="fa fa-question-circle"></i> Quienes Somos</a></li>
@@ -60,6 +107,27 @@
                 </ul>
             </div>
         </nav>
+
+<div class="slider" style="margin-top: -6px;">
+    <ul class="slides z-depth-3">
+        <li>
+            <img src="http://www.gobarinas.gob.ve/cadip/bannerparagobarinas/BANNER-_3-gobarinas-_c.gif"> 
+        </li>
+        <li>
+            <img src="http://www.gobarinas.gob.ve/cadip/bannerparagobarinas/BANNER-_1-gobarinas-_a.gif"> 
+        </li>
+        <li>
+            <img src="http://www.gobarinas.gob.ve/cadip/bannerparagobarinas/BANNER-_2-gobarinas-_b.gif"> <!-- random image -->
+        </li>   
+    </ul>
+             <nav class="z-depth-2">
+            <div class="nav-wrapper grey darken-4">
+ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem laudantium, expedita, quidem assumenda ducimus cumque, atque fugiat, eum ut in numquam mollitia est. Eveniet fugit debitis ad vel, voluptate modi.
+            </div>
+        </nav>
+</div>
+<br><br>
+
         <!--<img class="z-depth-2" width="100%" height="150px;" src="<?php echo baseUrl ?>assets/img/banner.jpg" alt=""> -->
         <!-- jQuery -->
         <?php echo $content ?>
