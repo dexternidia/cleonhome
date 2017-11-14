@@ -1,0 +1,68 @@
+<?php
+namespace App\admin\controllers;
+
+use App\banco\Personal;
+use Controller,View,Token,Session,Arr,Message,Redirect,Permission,Url;
+
+class Personal 
+{
+    function __construct()
+    {
+        Role('admin');
+    }
+
+    // localhost/proyecto/modulo/principal
+    public function index()
+    {
+        $personal = Personal::all();
+        View(compact('personal'));
+    }
+
+    // localhost/proyecto/modulo/principal/create
+    public function create()
+    {
+        $usuario_id = Url::uri(5);
+        View::show('create', compact('usuario_id'));
+    }
+
+    // localhost/proyecto/modulo/principal/
+    public function store()
+    {
+        //se manda los datos del formulario al repositorio para ser guardados
+        $ingresarPersonal = Repo::store($_POST);
+
+        //la variable $ingreso debe devolver true o en su caso un mensaje diciendo el error resultante
+        if (is_numeric($ingresarPersonal)) 
+        {
+            Redirect::send('admin/cuentas/'.$ingresarPersonal,'success', 'Los datos personales han sido agregados con exito..!');
+        } 
+        else 
+        {
+            Redirect::send('admin/cuentas/create','error', $ingresarPersonal);
+        }
+    }
+
+    // localhost/proyecto/modulo/principal/ID
+    public function show($id)
+    {
+        View::show('show', compact('id'));
+    }
+
+    // localhost/proyecto/modulo/principal/ID/edit
+    public function edit($id)
+    {
+        View::show('edit' , compact('id'));
+    }
+
+    // localhost/proyecto/modulo/principal/ID/put
+    public function update($id)
+    {
+        //Actualizar datos con el ID
+    }
+
+    // localhost/proyecto/modulo/principal/ID/delete
+    public function destroy($id)
+    {
+        //Borrar un registro usando el ID
+    }
+}

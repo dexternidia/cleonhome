@@ -1,0 +1,57 @@
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title text-muted">INGRESAR PERSONAL</h3>
+  </div>
+  <div class="panel-body">
+    <form action="<?php echo baseUrl ?>laboratorio/donantes" method="POST">
+      <?php echo Token::field() ?>
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="form-group">
+            <input class="form-control" type="text" name="nombre_apellido" placeholder="Nombre y Apellido" required>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="form-group">
+            <select class="form-control" name="nacionalidad">
+              <option value="V">V</option>
+              <option value="E">E</option>
+            </select>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="form-group">
+            <input class="form-control" type="text" name="cedula" placeholder="Cédula" value="<?php echo $cedula ?>" required>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="form-group">
+            <input class="form-control" type="text" name="email" placeholder="Email" required>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="form-group">
+            <input class="form-control" type="text" name="telefono_fijo" placeholder="Telefono fijo" required>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="form-group">
+            <input class="form-control" type="text" name="telefono_celular" placeholder="Telefono celular" required>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="form-group">
+            <input class="form-control" type="text" name="fecha_nacimiento" placeholder="Fecha nacimiento" required>
+          </div>
+        </div>
+        <div class="col-lg-12">
+          <div class="form-group">
+            <input class="form-control" type="text" name="direccion" placeholder="Dirección" required>
+          </div>
+        </div>
+      </div>
+      <br>
+      <button type="submit" class="btn btn-lg btn-success pull-right"><i class="fa fa-save fa-2x"></i></button>
+    </form>
+  </div>
+</div>

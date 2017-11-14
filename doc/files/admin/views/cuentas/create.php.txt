@@ -1,0 +1,29 @@
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title text-muted">INGRESAR CUENTA</h3>
+  </div>
+  <div class="panel-body">
+    <form action="<?php echo baseUrl ?>admin/cuentas" method="POST">
+      <?php echo Token::field() ?>
+      <input type="hidden" name="role" value="banco">
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="form-group">
+            <input class="form-control" type="text" name="name" placeholder="Ingrese Nombre" required>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="form-group">
+            <input class="form-control" type="email" name="email" placeholder="Ingrese Email" required>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="form-group">
+            <input class="form-control" type="password" name="password" placeholder="Ingrese Clave" required>
+          </div>
+        </div>
+      </div>
+      <button type="submit" class="btn btn-lg btn-success pull-right"><i class="fa fa-save fa-2x"></i></button>
+    </form>
+  </div>
+</div>

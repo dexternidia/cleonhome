@@ -1,0 +1,71 @@
+<?php
+namespace App\admin\controllers;
+
+use App\Usuario;
+use App\admin\repositories\CuentasRepository as Repo;
+use Controller,View,Token,Session,Arr,Message,Redirect,Permission;
+
+class Cuentas extends Controller
+{
+    function __construct()
+    {
+        parent::__construct();
+        Permission::withRole('admin');
+    }
+
+    // localhost/proyecto/modulo/principal
+    public function index()
+    {
+        $cuentas_banco_sangre = Usuario::where('role','=','banco')->get(); 
+        View::show('index', compact('cuentas_banco_sangre'));
+    }
+
+    // localhost/proyecto/modulo/principal/create
+    public function create()
+    {
+        View::show('create');
+    }
+
+    // localhost/proyecto/modulo/principal/
+    public function store()
+    {
+        //se manda los datos del formulario al repositorio para ser guardados
+        $ingresarCuenta = Repo::store($_POST);
+
+        //la variable $ingreso debe devolver true o en su caso un mensaje diciendo el error resultante
+        if (is_numeric($ingresarCuenta)) 
+        {
+            Redirect::send('admin/cuentas/'.$ingresarCuenta,'success', 'La cuenta se agrego exitosamente..!');
+        } 
+        else 
+        {
+            Redirect::send('admin/cuentas/create','error', $ingresarCuenta);
+        }
+    }
+
+    // localhost/proyecto/modulo/principal/ID
+    public function show($id)
+    {
+        $usuario = Usuario::find($id);
+        //Arr::show($usuario);
+        View::show('show', compact('id','usuario'));
+    }
+
+    // localhost/proyecto/modulo/principal/ID/edit
+    public function edit($id)
+    {
+        View::show('edit' , compact('id'));
+    }
+
+    // localhost/proyecto/modulo/principal/ID/put
+    public function update($id)
+    {
+        //Actualizar datos con el ID
+    }
+
+    // localhost/proyecto/modulo/principal/ID/delete
+    public function destroy($id)
+    {
+        //Borrar un registro usando el ID
+    }
+}

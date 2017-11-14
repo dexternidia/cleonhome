@@ -1,0 +1,17 @@
+{
+    "name": "bootstrap-theme-paper",
+    "version": "v3.3.7",
+    "authors": [
+        "KingYuan <ytoforever@hotmail.com>"
+    ],
+    "description": "Bootswatch Paper Bootstrap theme",
+    "main": "paper.css",
+    "keywords": [
+        "bootstrap",
+        "paper",
+        "theme",
+        "bootswatch"
+    ],
+    "license": "MIT",
+    "homepage": "http://bootswatch.com/paper"
+}

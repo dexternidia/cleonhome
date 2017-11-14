@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "jquery-paginate": "*",
+    "bootstrap-tagsinput" : "*"
+  }
+}

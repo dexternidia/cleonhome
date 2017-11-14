@@ -1,0 +1,29 @@
+{
+    "name": "shigoto",
+    "authors": [
+        "Beelab <info@bee-lab.net>",
+        null
+    ],
+    "private": true,
+    "dependencies": {
+        "jquery": "*",
+        "bootstrap-side-navbar": "*",
+        "components-font-awesome": "*",
+        "jasny-bootstrap": "*",
+        "sweetalert2": "*",
+        "bootstrap-theme-paper": "3.3.7",
+        "bootstrap-table": "*",
+        "bootstrap": "*",
+        "inputmask": "*",
+        "bootstrap-checkbox": "*",
+        "animate.css": "*",
+        "datatables.net": "*",
+        "datatables.net-bs": "*",
+        "EasyAutocomplete": "*",
+        "lightbox2": "*",
+        "jquery-mask-plugin": "*",
+        "jquery-maskmoney": "*",
+        "trumbowyg": "*",
+        "pickadate": "*"
+    }
+}

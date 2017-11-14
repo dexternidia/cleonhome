@@ -1,0 +1,50 @@
+{
+    "name": "carlosh1989/oda",
+    "description": "framework de la ODA",
+    "version": "v1.0.1",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "carlos silva",
+            "email": "elmorochez22@gmail.com"
+        }
+    ],  
+    "require": {
+        "mmucklo/krumo": "^0.5.7",
+        "squizlabs/php_codesniffer": "2.*",
+        "fzaninotto/faker": "^1.6",
+        "robmorgan/phinx": "^0.6.5",
+        "vlucas/phpdotenv": "^2.4",
+        "phpdocumentor/phpdocumentor": "^2.9",
+        "particle/validator": "^2.2",
+        "typo3/class-alias-loader": "^1.0",
+        "rcastera/session": "v1.0.0",
+        "filp/whoops": "^2.1",
+        "illuminate/database": "5.1.8",
+        "usmanhalalit/strana": "1.*@dev",
+        "railto/flash-messages": "1.0.*",
+        "nesbot/carbon": "^1.22",
+        "beelab/bowerphp": "^0.5.2",
+        "windwalker/edge": "^3.2",
+        "dompdf/dompdf":"*",
+        "google/recaptcha": "~1.1"
+    },
+    "autoload": {
+        "psr-0": {
+            "App\\": "app/",
+            "Config\\": "config/",
+            "System\\": "system/",
+            "Migrations\\": "migrations/",
+            "DB\\": "db/"
+        }
+    },
+    "config": {
+            "optimize-autoloader": true
+    },
+    "extra": {
+        "typo3/class-alias-loader": {
+            "always-add-alias-loader": true,
+            "class-alias-maps": ["config/alias.php"]
+        }
+    }
+}

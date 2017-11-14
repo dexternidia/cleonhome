@@ -1,0 +1,14 @@
+<div id="panel" class="panel panel-primary">
+  <div class="panel-heading">
+    <h3 class="panel-title text-muted"><i class="fa fa-eyedropper fa-2x"></i><i class="fa fa-plus"></i> LABORATORIOS</h3>
+  </div>
+  <br>
+  <div class="panel-body">
+    <script src="//api.filestackapi.com/filestack.js" type="text/javascript"></script>
+    <form action="<?php echo baseUrl ?>banco/laboratoriosImagenes" method="POST">
+      <?php echo Token::field() ?>
+      <input class="btn btn-primary" name="imagen" onchange="alert(event.fpfile.url)" data-fp-services="COMPUTER,URL,WEBCAM" data-fp-maxsize="1000000" data-fp-container="modal" data-fp-mimetypes="image/*" data-fp-apikey="A1nL8omiAR8W7pHi3cotzz" type="filepicker">
+      <input type="submit">
+    </form>
+  </div>
+</div>

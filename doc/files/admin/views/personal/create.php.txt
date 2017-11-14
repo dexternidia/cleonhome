@@ -1,0 +1,49 @@
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title text-muted">INGRESAR DATOS PERSONALES</h3>
+  </div>
+  <div class="panel-body">
+    <form action="<?php echo baseUrl ?>admin/personal" method="POST">
+      <?php echo Token::field() ?>
+      <input type="hidden" name="usuario_id" value="<?php echo $usuario_id ?>">
+      <input type="hidden" name="role" value="banco">
+      <div class="row">
+        <div class="col-lg-2">
+          <div class="form-group">
+            <select class="form-control" name="nacionalidad" required>
+              <option value="">Nacionalidad</option>
+              <option>V</option>
+              <option>E</option>
+            </select>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="form-group">
+            <input class="form-control" type="number" name="cedula" placeholder="Cédula" required>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="form-group">
+            <input class="form-control" type="text" name="fecha_nacimiento" placeholder="Fecha de Nacimiento" required>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="form-group">
+            <input class="form-control" type="number" name="telefono_fijo" placeholder="Telefono fijo" required>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="form-group">
+            <input class="form-control" type="number" name="telefono_celular" placeholder="Telefono celular" required>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="form-group">
+            <input class="form-control" type="text" name="cargo" placeholder="Cargo" required>
+          </div>
+        </div>
+      </div>
+      <button type="submit" class="btn btn-lg btn-success pull-right"><i class="fa fa-save fa-2x"></i></button>
+    </form>
+  </div>
+</div>
